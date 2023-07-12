@@ -1,0 +1,45 @@
+section.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.hobbies__box{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 8px;
+    background: white;
+}
+.hobbies__box ul{
+    padding: 0 10px;
+}
+@media (min-width: 769px) {
+    section.hobbies{
+        gap:32px
+    }
+    .hobbies__box{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+    .hobbies__line{
+        gap: 10px;
+        
+    }
+}
+@media (min-width: 0px) {
+    .hobbies__line{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
